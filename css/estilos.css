@@ -1,0 +1,689 @@
+@charset "UTF-8";
+/*! TODAS (o casi todas) LAS CLASES Y MODIFICACIONES EN ESTE DOCUMENTO SE ENCUENTRAN EN EL MISMO ÓRDEN EN EL CUAL PUEDEN SER HALLADAS EN LOS HTML, CON EXCEPCIÓN DE LAS CLASES REPETIDAS A LO LARGO DE TODOS LOS DOCUMENTOS*/
+/*!-------RESET-------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ececec;
+  font-family: "Montserrat", sans-serif; }
+
+/*! CLASES REPETIDAS */
+/** Bootstrap */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #434a50; }
+
+.carousel-caption {
+  color: #e7e7e7be; }
+
+.card {
+  box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+  transition-duration: 0.5s; }
+  .card:hover {
+    transform: scale(1.05);
+    transition-timing-function: ease;
+    box-shadow: 9px 10px 29px -3px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 9px 10px 29px -3px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 9px 10px 29px -3px rgba(0, 0, 0, 0.66);
+    transition-duration: 0.5s; }
+
+.tarjeta-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: auto;
+  background-color: #c2c2c2c9;
+  padding: 20px 0 20px 0;
+  margin: 0 40px 0 40px;
+  border-radius: 20px; }
+  .tarjeta-flex div div a {
+    text-decoration: none;
+    transition-duration: 0.25s; }
+    .tarjeta-flex div div a:hover {
+      color: #dc3545; }
+
+.card-body-extra {
+  background-color: rgba(233, 233, 233, 0.697); }
+
+/*!-------NAV-------*/
+header {
+  margin: 0 0 20px 0; }
+  header .container-fluid {
+    padding: 20px 0 20px 0; }
+    header .container-fluid .navbar-brand img {
+      height: 75px; }
+  header .nav-item a:hover {
+    color: #dc3545; }
+  header .navbar-brand img {
+    transition-duration: 0.5s; }
+    header .navbar-brand img:hover {
+      scale: 1.1;
+      transition-timing-function: ease; }
+
+/*! -------- INDEX -------- */
+.index__h1 {
+  background-image: url(../img/compilado3.0.jpg);
+  background-position: center;
+  border-radius: 15px;
+  padding: 80px 0 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  margin: 0 30px 20px 30px; }
+  .index__h1 a {
+    text-decoration: none; }
+    .index__h1 a h1 {
+      color: #ff7f7f;
+      font-weight: 700;
+      transition-duration: 0.25s; }
+      .index__h1 a h1:hover {
+        color: #ff3b3b; }
+
+.index__h2-color {
+  color: black;
+  display: inline-block;
+  padding: 0 0 50px 30px; }
+  .index__h2-color a {
+    text-decoration: none;
+    color: #3E7CB1;
+    transition-duration: 0.15s; }
+    .index__h2-color a:hover {
+      color: #89373d; }
+
+.index__carrusel {
+  margin: 20px 15px 20px 15px; }
+
+/*! -------- PRODUCTOS ------- */
+.productos__section--enlaces-relativos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: auto;
+  flex-wrap: wrap;
+  border-color: #434a50;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px 40px 0 40px;
+  padding: 10px 0 10px 0; }
+  .productos__section--enlaces-relativos a {
+    text-decoration: none;
+    color: #3E7CB1; }
+    .productos__section--enlaces-relativos a img {
+      height: 100px;
+      transition-duration: 0.5s; }
+      .productos__section--enlaces-relativos a img:hover {
+        transform: scale(1.1);
+        transition-timing-function: ease; }
+
+.carrusel-productos div {
+  margin: 20px 0 0 0; }
+
+/*! ------- SERVICIOS --------*/
+.h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  padding: 30px 0 0 0;
+  margin: 0 30px 20px 30px; }
+  .h1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: auto;
+    text-align: center;
+    margin: 0 30px 20px 30px; }
+    .h1 div p {
+      color: #434a50;
+      font-size: 25px; }
+  .h1 h1 {
+    border: none;
+    color: #89373d;
+    font-weight: 700; }
+
+.paddingh3 {
+  padding: 0px 0 0 20px;
+  color: #295264; }
+  .paddingh3 div {
+    padding: 0 0 0 40px;
+    color: #434a50; }
+  .paddingh3 p strong {
+    color: black; }
+
+.servicios__section-margin {
+  margin: 0 40px 0 0; }
+
+h2 {
+  padding: 50px 0 0 30px;
+  color: #89373d;
+  margin: 15px; }
+
+/*! -------- NOSOTROS -------- */
+.padding-nosotros {
+  margin: 0 40px 0 0; }
+  .padding-nosotros p {
+    padding: 0 0 0 40px;
+    color: #434a50; }
+  .padding-nosotros h3 {
+    color: #89373d;
+    margin: 60px 0 20px 0; }
+  .padding-nosotros ul li {
+    padding: 0 0 0 40px;
+    color: #434a50;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600; }
+    .padding-nosotros ul li span {
+      font-weight: 400; }
+
+/*! -------- CONTACTO -------- */
+.contacto-container-2 {
+  padding: 0 0 0 20px; }
+
+.contactos__section-1 {
+  display: flex;
+  justify-content: center; }
+
+.contactos__section-1__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  background-color: #99999999;
+  width: 80%;
+  padding: 15px 20px 15px 20px;
+  margin: 0 0 15px 0; }
+  .contactos__section-1__div div {
+    height: 100px;
+    background-size: cover;
+    background-position: center; }
+  .contactos__section-1__div img {
+    height: 100px;
+    margin: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    transition-duration: 0.5s;
+    box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+    box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 9px 10px 14px -9px rgba(0, 0, 0, 0.88); }
+    .contactos__section-1__div img:hover {
+      transform: scale(1.1);
+      transition-timing-function: ease;
+      box-shadow: 9px 10px 29px -3px rgba(0, 0, 0, 0.66);
+      -webkit-box-shadow: 9px 10px 29px -3px rgba(0, 0, 0, 0.66);
+      -moz-box-shadow: 9px 10px 29px -3px rgba(0, 0, 0, 0.66);
+      transition-duration: 0.5s; }
+  .contactos__section-1__div iframe {
+    height: 200px;
+    width: 200px; }
+
+.contactos__section-2 {
+  background-color: #99999999;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px; }
+  .contactos__section-2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .contactos__section-2 div h3 {
+      color: #89373d;
+      font-weight: 600; }
+    .contactos__section-2 div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: auto;
+      background-color: #75757599;
+      padding: 30px;
+      border-style: solid;
+      border-color: #89373d;
+      border-width: 1.5px;
+      border-radius: 10px; }
+      .contactos__section-2 div div div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        border-radius: 10px;
+        border-style: none; }
+        .contactos__section-2 div div div iframe {
+          height: 200px;
+          width: 350px;
+          border-radius: 5px; }
+        .contactos__section-2 div div div div {
+          background-color: #75757500;
+          display: flex;
+          flex-direction: column;
+          justify-content: auto;
+          align-items: start;
+          margin: 0;
+          padding: 0; }
+          .contactos__section-2 div div div div a {
+            text-decoration: none;
+            color: #89373d;
+            transition-duration: 0.3s; }
+            .contactos__section-2 div div div div a:hover {
+              color: #dc3545; }
+  .contactos__section-2 img {
+    width: 50%;
+    margin: 20px;
+    border-radius: 5px; }
+
+.contactos__div--número {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: auto;
+  margin: 15px; }
+  .contactos__div--número h3 {
+    font-weight: 700;
+    color: #89373d;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #99999999;
+    transition-duration: 0.2s; }
+    .contactos__div--número h3:hover {
+      color: #dc3545; }
+
+.contactos__section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #99999999;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5px;
+  border-radius: 20px;
+  margin: 70px 0px 0px 0px;
+  padding: 0px 0 50px 0px;
+  width: 80%;
+  margin-left: 10%; }
+  .contactos__section-3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: auto;
+    width: 70%; }
+
+.contactos__section-3__div-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: auto;
+  align-items: center; }
+  .contactos__section-3__div-1 img {
+    margin: 30px 0 0 0;
+    width: 100px;
+    height: 100px; }
+
+/*!-------FOOTER-------*/
+footer {
+  background-color: #295264;
+  background: linear-gradient(0deg, #4a1d1d 0%, #823434 23%, #ba4d4d 67%);
+  padding: 30px 0 0 0; }
+  footer div ul li a {
+    text-decoration: none;
+    color: #011627; }
+
+/** --- GRID --- */
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "contactanos logo direccion" "terminos logo redes";
+  width: 100%; }
+
+.footer__grid__contacto {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  grid-area: contactanos; }
+  .footer__grid__contacto p {
+    padding: 0 0 0 30px;
+    display: inline-block; }
+    .footer__grid__contacto p:nth-of-type(1) {
+      padding: 0 0 0 0px;
+      background-color: #c2c2c2c9;
+      color: #89373d;
+      background-color: #c2c2c2c9;
+      display: inline-block;
+      border-radius: 5px;
+      margin: 0 0 0 20px; }
+
+.footer__grid__direccion {
+  padding: 0 30px 0 0;
+  grid-area: direccion;
+  justify-self: end; }
+  .footer__grid__direccion iframe {
+    width: 400px;
+    height: 200px;
+    margin: 0 10px 20px 30px;
+    border-radius: 10px; }
+  .footer__grid__direccion p {
+    color: black; }
+
+.footer__grid__rooking-logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .footer__grid__rooking-logo img {
+    height: 300px;
+    transition-duration: 0.5s; }
+    .footer__grid__rooking-logo img:hover {
+      scale: 1.1;
+      transition-timing-function: ease; }
+
+.footer__grid__terminos {
+  grid-area: terminos;
+  padding: 0 0 0 30px; }
+  .footer__grid__terminos p:nth-of-type(1) {
+    padding: 0 0 0 0px;
+    background-color: #c2c2c2c9;
+    color: #89373d;
+    background-color: #c2c2c2c9;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 0 0 20px; }
+  .footer__grid__terminos ul li {
+    display: inline-block; }
+    .footer__grid__terminos ul li a {
+      transition-duration: 0.25s; }
+      .footer__grid__terminos ul li a:hover {
+        color: #e95c65; }
+
+.footer__grid__redes {
+  grid-area: redes;
+  justify-self: end;
+  margin: 0 10px 0 0; }
+  .footer__grid__redes span a {
+    text-decoration: none;
+    display: inline-block;
+    color: #89373d;
+    background-color: #c2c2c2c9;
+    padding: 3px;
+    border-radius: 10px;
+    transition-duration: 0.25s; }
+    .footer__grid__redes span a:hover {
+      background-color: #e95c65;
+      color: #011627; }
+  .footer__grid__redes a img {
+    display: inline-block;
+    height: 30px;
+    padding: 0 30px;
+    margin: 0 0 10px; }
+  .footer__grid__redes .facebook-logo {
+    padding: 0 0 0 42px; }
+
+/** ------ */
+/*! -------- MEDIAQUERIES -------- */
+@media (max-width: 1250px) {
+  /* Relacionado a Contactos */
+  .contactos__section-2 div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
+  .contactos__section-2 img {
+    width: 80%;
+    margin: 20px;
+    border-radius: 5px; } }
+
+@media (max-width: 1050px) {
+  /* Relacionado a Footer */
+  .footer__grid__rooking-logo img {
+    height: 200px; }
+  /* Relacionado a Contactos */
+  .contactos__section-1__div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 2px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 15px;
+    background-color: #99999999;
+    width: 80%;
+    padding: 15px 20px 15px 20px;
+    margin: 0 0 15px 0; }
+    .contactos__section-1__div img {
+      height: 70px;
+      margin: 20px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px;
+      border-width: 1px;
+      transition-duration: 0.5s; }
+      .contactos__section-1__div img:hover {
+        transform: scale(1.1); } }
+
+@media (max-width: 970px) {
+  /* Relacionado a Footer */
+  .footer__grid__rooking-logo img {
+    display: none; } }
+
+@media (max-width: 860px) {
+  /* Relacionado a Contactos */
+  .contactos__section-1__div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 2px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 15px;
+    background-color: #99999999;
+    width: 80%;
+    padding: 15px 20px 15px 20px;
+    margin: 0 0 15px 0; }
+    .contactos__section-1__div img {
+      height: 50px;
+      margin: 10px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px;
+      border-width: 1px;
+      transition-duration: 0.5s; }
+      .contactos__section-1__div img:hover {
+        transform: scale(1.1); } }
+
+@media (max-width: 810px) {
+  /* Relacionado a Bootstrap*/
+  .card-text {
+    display: none; } }
+
+@media (max-width: 760px) {
+  /* Relacionado a Productos */
+  .productos__section--enlaces-relativos a img {
+    height: 75px; }
+  /* Relacionado a Footer */
+  .footer__grid__direccion iframe {
+    width: 370px;
+    height: 200px;
+    justify-self: start;
+    margin: 0; }
+  /* Relaciuonado a Contacto */
+  .contactos__section-3 div h2 {
+    padding: 10px 0 0 0; } }
+
+@media (max-width: 720px) {
+  /* Relacionado a Footer */
+  .footer__grid {
+    grid-template-columns: 1;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "contactanos" "direccion" "terminos" "redes";
+    width: 100%; }
+  .footer__grid__contacto {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    grid-area: contactanos;
+    margin-bottom: 20px; }
+  .footer__grid__direccion {
+    padding: 0 30px;
+    grid-area: direccion;
+    margin-bottom: 20px; }
+    .footer__grid__direccion iframe {
+      width: 350px;
+      height: 200px;
+      justify-self: start;
+      margin: 0; }
+  .footer__grid__terminos {
+    grid-area: terminos;
+    margin-bottom: 20px; }
+  .footer__grid__redes {
+    grid-area: redes;
+    display: flex;
+    justify-self: start;
+    align-items: start;
+    flex-direction: column-reverse;
+    margin: 0 0 20px 40px; }
+  .facebook-logo {
+    padding: 0 0 0 30px; } }
+
+@media (max-width: 690px) {
+  /* Relacionado a Index */
+  .h1-index {
+    background-image: url(../img/compilado3.0.jpg);
+    background-position: center;
+    border-radius: 15px;
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px 20px 30px; } }
+
+@media (max-width: 620px) {
+  /* Relacionado a Bootstrap*/
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover; }
+  /* Relacionado a Contactos */
+  .contactos__section-2 div div div iframe {
+    height: 150px;
+    width: 250px;
+    border-radius: 5px; }
+  .contactos__section-1__div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 1px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    background-color: #99999999;
+    width: 80%;
+    padding: 15px 0px 15px 0px;
+    margin: 0 0 15px 0; }
+    .contactos__section-1__div img {
+      height: 40px;
+      margin: 2px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px;
+      border-width: 1px;
+      transition-duration: 0.5s; }
+      .contactos__section-1__div img:hover {
+        transform: scale(1.1); }
+  .contactos__div--número {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contactos__div--número h3:nth-of-type(2) {
+      display: none; } }
+
+@media (max-width: 545px) {
+  /* Relacionado a Bootstrap*/
+  .card-title {
+    display: none; }
+  /* Relacionado a Contactos */
+  .contactos__section-2 div div div iframe {
+    height: 100px;
+    width: 200px;
+    border-radius: 5px; } }
+
+@media (max-width: 470px) {
+  /* Relacionado a Bootstrap*/
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover; }
+  /* Relacionado a Footer*/
+  .footer__grid__direccion iframe {
+    width: 270px;
+    height: 120px;
+    justify-self: start;
+    margin: 0; }
+  /* Relacionado a Contactos */
+  .contactos__section-2 div img {
+    display: none; }
+  .contactos__section-2 div div div iframe {
+    display: none; } }
+
+@media (max-width: 450px) {
+  /* Relacionado a Index */
+  .h1-index {
+    background-image: url(../img/compilado3.0.jpg);
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 30px 20px 30px; }
+  /* Relacionado a Productos*/
+  .productos__section--enlaces-relativos a img {
+    height: 50px; } }
+
+@media (max-width: 400px) {
+  /* Relacionado a Bootstrap*/
+  .card-link-ver-mas {
+    display: none; }
+  /* Relacionado a Contactos */
+  .contactos__section-1__div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 1px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    background-color: #99999999;
+    width: 80%;
+    padding: 15px 0px 15px 0px;
+    margin: 0 0 15px 0; }
+    .contactos__section-1__div img {
+      height: 30px;
+      margin: 2px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 10px;
+      border-width: 1px;
+      transition-duration: 0.5s; }
+      .contactos__section-1__div img:hover {
+        transform: scale(1.1); } }

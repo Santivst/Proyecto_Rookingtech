@@ -1,0 +1,88 @@
+/*! TODAS (o casi todas) LAS CLASES Y MODIFICACIONES EN ESTE DOCUMENTO SE ENCUENTRAN EN EL MISMO ÓRDEN EN EL CUAL PUEDEN SER HALLADAS EN LOS HTML, CON EXCEPCIÓN DE LAS CLASES REPETIDAS A LO LARGO DE TODOS LOS DOCUMENTOS*/
+
+/*!-------RESET-------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececec;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+$primary-color: #89373d;
+
+@mixin flex ($flex, $direction, $justify, $align) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+
+
+/*! CLASES REPETIDAS */
+
+
+/** Bootstrap */
+
+.carousel-item {
+    img {
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: #434a50;
+    }
+}
+
+.carousel-caption {
+    color: #e7e7e7be;
+}
+
+.card {
+    box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+    -webkit-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+    -moz-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+    transition-duration: 0.5s;
+    &:hover{
+        transform: scale(1.05);
+        transition-timing-function: ease;
+        box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+        -webkit-box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+        -moz-box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+        transition-duration: 0.5s;
+    }
+}
+
+.tarjeta-flex {
+    @include flex (flex, row, space-around, auto);
+    background-color: #c2c2c2c9;
+    padding: 20px 0 20px 0;
+    margin: 0 40px 0 40px;
+    border-radius: 20px;
+    div {
+        div {
+            a {
+                text-decoration: none;
+                transition-duration: 0.25s;
+                &:hover {
+                    color: #dc3545;
+                }
+            }
+        }
+    }
+}
+
+.card-body-extra {
+    background-color: rgba(233, 233, 233, 0.697);
+}
+

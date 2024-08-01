@@ -1,0 +1,365 @@
+/*! -------- MEDIAQUERIES -------- */
+
+
+@media (max-width: 1250px) {
+    /* Relacionado a Contactos */
+    .contactos__section-2 {
+        div {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        }
+        img {
+            width: 80%;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+    /* Relacionado a Footer */
+    .footer__grid__rooking-logo {
+        img {
+            height: 200px;
+        }
+    }
+    /* Relacionado a Contactos */
+    .contactos__section-1__div {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        gap: 2px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1.5px;
+        border-radius: 15px;
+        background-color: #99999999;
+        width: 80%;
+        padding: 15px 20px 15px 20px;
+        margin: 0 0 15px 0;
+        img {
+            height: 70px;
+            margin: 20px;
+            border-style: solid ;
+            border-color: black;
+            border-radius: 10px;
+            border-width: 1px;
+            transition-duration: 0.5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    /* Relacionado a Footer */
+    .footer__grid__rooking-logo {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    /* Relacionado a Contactos */
+    .contactos__section-1__div {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        gap: 2px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1.5px;
+        border-radius: 15px;
+        background-color: #99999999;
+        width: 80%;
+        padding: 15px 20px 15px 20px;
+        margin: 0 0 15px 0;
+        img {
+            height: 50px;
+            margin: 10px;
+            border-style: solid ;
+            border-color: black;
+            border-radius: 10px;
+            border-width: 1px;
+            transition-duration: 0.5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    /* Relacionado a Bootstrap*/
+    .card-text {
+        display: none;
+    }
+}
+
+
+@media (max-width: 760px) {
+    /* Relacionado a Productos */
+    .productos__section--enlaces-relativos {
+        a {
+            img {
+                height: 75px;
+            }
+        }
+    }
+    /* Relacionado a Footer */
+    .footer__grid__direccion {
+        iframe {
+            width: 370px;
+            height: 200px;
+            justify-self: start;
+            margin: 0;
+        }
+    }
+    /* Relaciuonado a Contacto */
+    .contactos__section-3 {
+        div {
+            h2 {
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    /* Relacionado a Footer */
+    .footer__grid {
+        grid-template-columns: 1;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "contactanos"
+            "direccion"
+            "terminos"
+            "redes"
+        ;
+        width: 100%;
+    }
+    
+    .footer__grid__contacto {
+        display: inline-block;
+        padding: 0 0 0 30px;
+        grid-area: contactanos;
+        margin-bottom: 20px;
+    }
+    
+    .footer__grid__direccion{
+        padding: 0 30px;
+        grid-area: direccion;
+        margin-bottom: 20px;
+        iframe {
+            width: 350px;
+            height: 200px;
+            justify-self: start;
+            margin: 0;
+        }
+    }
+    
+    .footer__grid__terminos {
+        grid-area: terminos;
+        margin-bottom: 20px;
+    }
+    
+    .footer__grid__redes {
+        grid-area: redes;
+        display: flex;
+        justify-self: start;
+        align-items: start;
+        flex-direction:column-reverse ;
+        margin: 0 0 20px 40px
+    }
+    .facebook-logo {
+        padding: 0 0 0 30px;
+    }
+}
+
+@media (max-width: 690px) {
+    /* Relacionado a Index */
+    .h1-index {
+        background-image: url(../img/compilado3.0.jpg);
+        background-position: center;
+        border-radius: 15px;
+        padding: 40px 0 40px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 30px 20px 30px;
+    }
+}
+
+@media (max-width: 620px) {
+    /* Relacionado a Bootstrap*/
+    .carousel-item {
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    /* Relacionado a Contactos */
+    .contactos__section-2 {
+        div {
+            div {
+                div {
+                    iframe {
+                    height: 150px;
+                    width: 250px;
+                    border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .contactos__section-1__div {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        gap: 1px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 15px;
+        background-color: #99999999;
+        width: 80%;
+        padding: 15px 0px 15px 0px;
+        margin: 0 0 15px 0;
+        img {
+            height: 40px;
+            margin: 2px;
+            border-style: solid ;
+            border-color: black;
+            border-radius: 10px;
+            border-width: 1px;
+            transition-duration: 0.5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .contactos__div--número {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            &:nth-of-type(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    /* Relacionado a Bootstrap*/
+    .card-title{
+        display: none;
+    }
+    /* Relacionado a Contactos */
+    .contactos__section-2 {
+        div {
+            div {
+                div {
+                    iframe {
+                    height: 100px;
+                    width: 200px;
+                    border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    /* Relacionado a Bootstrap*/
+    .carousel-item {
+        img {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    /* Relacionado a Footer*/
+    .footer__grid__direccion {
+        iframe {
+            width: 270px;
+            height: 120px;
+            justify-self: start;
+            margin: 0;
+        }
+    }
+    /* Relacionado a Contactos */
+    .contactos__section-2 {
+        div {
+            img {
+                display: none;
+            }
+            div {
+                div {
+                    iframe {
+                    display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    /* Relacionado a Index */
+    .h1-index {
+        background-image: url(../img/compilado3.0.jpg);
+        background-position: center;
+        border-radius: 15px;
+        padding: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+        margin: 0 30px 20px 30px;
+    }
+    /* Relacionado a Productos*/
+    .productos__section--enlaces-relativos {
+        a {
+            img {
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    /* Relacionado a Bootstrap*/
+    .card-link-ver-mas{
+        display: none;
+    }
+    /* Relacionado a Contactos */
+    .contactos__section-1__div {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        gap: 1px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 15px;
+        background-color: #99999999;
+        width: 80%;
+        padding: 15px 0px 15px 0px;
+        margin: 0 0 15px 0;
+        img {
+            height: 30px;
+            margin: 2px;
+            border-style: solid ;
+            border-color: black;
+            border-radius: 10px;
+            border-width: 1px;
+            transition-duration: 0.5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

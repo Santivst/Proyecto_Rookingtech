@@ -1,0 +1,40 @@
+/*! -------- INDEX -------- */
+
+.index__h1 {
+    background-image: url(../img/compilado3.0.jpg);
+    background-position: center;
+    border-radius: 15px;
+    padding: 80px 0 80px 0;
+    @include flex (flex, row, center, auto);
+    margin: 0 30px 20px 30px;
+    a {
+        text-decoration: none;
+        h1 {
+            color: #ff7f7f;
+            font-weight: 700;
+            transition-duration: 0.25s;
+            &:hover {
+                color:#ff3b3b ;
+            }
+        }
+    }
+}
+
+.index__h2-color {
+    color:black;
+    display: inline-block;
+    padding: 0 0 50px 30px;
+    a {
+        text-decoration: none;
+        color: #3E7CB1;
+        transition-duration: 0.15s;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.index__carrusel {
+    margin: 20px 15px 20px 15px;
+}
+

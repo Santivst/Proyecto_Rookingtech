@@ -1,0 +1,154 @@
+/*! -------- CONTACTO -------- */
+
+.contacto-container-2 {
+    padding: 0 0 0 20px;
+}
+
+.contactos__section-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.contactos__section-1__div {
+    @include flex (flex, row, space-around, center);
+    gap: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    background-color: #99999999;
+    width: 80%;
+    padding: 15px 20px 15px 20px;
+    margin: 0 0 15px 0;
+    div {
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+    }
+        img {
+            height: 100px;
+            margin: 10px;
+            border-style: solid ;
+            border-color: black;
+            border-radius: 10px;
+            border-width: 1px;
+            transition-duration: 0.5s;
+            box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            -webkit-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            -moz-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);    box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            -webkit-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            -moz-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            &:hover {
+                transform: scale(1.1);
+                transition-timing-function: ease;
+                box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+                -webkit-box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+                -moz-box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+                transition-duration: 0.5s;
+            }
+            }
+    iframe {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.contactos__section-2 {
+    background-color: #99999999;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    div {
+        @include flex (flex, row, space-around, center);
+        h3 {
+            color: $primary-color;
+            font-weight: 600;
+        }
+        div {
+            @include flex (flex, column, center, auto);
+            background-color: #75757599;
+            padding: 30px;
+            border-style: solid;
+            border-color: $primary-color;
+            border-width: 1.5px;
+            border-radius: 10px;
+            div {
+                @include flex (flex, row, space-around, center);
+                padding: 15px;
+                border-radius: 10px;
+                border-style: none;
+                iframe {
+                    height: 200px;
+                    width: 350px;
+                    border-radius: 5px;
+                }
+                div {
+                    background-color: #75757500;
+                    @include flex (flex, column, auto, start);
+                    margin: 0;
+                    padding: 0;
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                        transition-duration: 0.3s;
+                        &:hover {
+                            color: #dc3545;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    img {
+        width: 50%;
+        margin: 20px;
+        border-radius: 5px;
+    }
+}
+
+.contactos__div--número {
+    @include flex (flex, row, space-around, auto);
+    margin: 15px;
+        h3 {
+            font-weight: 700;
+            color: $primary-color;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #99999999;
+            transition-duration: 0.2s;
+            &:hover {
+                color: #dc3545;
+            }
+        }
+}
+
+
+.contactos__section-3 {
+    @include flex (flex, column, center, center);
+    background-color: #99999999;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    border-radius: 20px;
+    margin: 70px 0px 0px 0px;
+    padding: 0px 0 50px 0px;
+    width: 80%;
+    margin-left: 10%;
+    div {
+        @include flex (flex, column, auto, auto);
+        width: 70%;
+    }
+}
+
+.contactos__section-3__div-1 {
+    @include flex (flex, row, auto, center);
+    img {
+        margin: 30px 0 0 0;
+        width: 100px;
+        height: 100px;
+    }
+}
+

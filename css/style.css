@@ -1,20 +1,5 @@
-/*!-------RESET-------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    background-color: #c2c2c2c9;
-    font-family: "Montserrat", sans-serif;
-}
-
-
-/*!-------HEADER-------*/
-
-
-/*!-------NAV-------*/
+/*! -------- NAV --------*/
 
 .navbar-brand img {
     height: 75px;
@@ -64,12 +49,14 @@ header {
     color: #3E7CB1;
 }
 
+/*
 .setup {
     padding: 15px 0 15px 70px;
     height: 600px;
     width: 95%;
 }
-
+*/
+/*
 .flex-ofertas {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +116,7 @@ header {
     height: 400px;
     width: 400px;
 }
+*/
 
 /* PSEUDOCLASES */
 
@@ -303,7 +291,7 @@ footer div ul li a {
     padding: 0px 0 0 20px;
     color: #295264;
 }
-
+/*
 .flex-productos-seleccionados {
     display: flex;
     flex-wrap: wrap;
@@ -328,6 +316,7 @@ footer div ul li a {
     height: 400px;
     width: 400px;
 }
+*/
 
 .categorias-catalogo {
     display: flex;
@@ -348,11 +337,6 @@ footer div ul li a {
 .categorias-catalogo a {
     text-decoration: none;
     color: #3E7CB1;
-}
-
-.catalogo-productos {
-    height: 300px;
-    display: inline-block;
 }
 
 .flex-productos-tecnologia {
@@ -392,10 +376,6 @@ footer div ul li a {
     justify-content: center;
     text-align: center;
     margin: 0 30px 20px 30px;
-}
-
-.nosotros-h1 h1 {
-    color: #89373d;
 }
 
 .nosotros-h1 p {
@@ -484,59 +464,43 @@ footer div ul li a {
 /*! -------- MEDIA QUERIES -------- */
 
 
-/** Header */
-
-@media (max-width: 690px) {
-    .nav-grid {
-        grid-template-rows: 50px 25px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "nav-top-left nav-top-right"
-            "nav-top-middle nav-top-middle"
-            "nav-bottom nav-bottom";
-        gap: 5px;
-    }
-    
-    .nav-top-left {
-        grid-area: nav-top-left;
-    }
-    
-    .nav-top-middle {
-        grid-area: nav-top-middle;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .nav-top-right {
-        grid-area: nav-top-right;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    .nav-bottom {
-        grid-area: nav-bottom;
-    }
-    
-}
-
-
-/** Footer  */
 
 @media (max-width: 1050px) {
+    /* Relacionado a Footer */
     .rooking-logo-footer img {
         height: 200px;
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
+    /* Relacionado a Footer */
     .rooking-logo-footer img {
         display: none;
     }
 }
 
+@media (max-width: 810px) {
+    /* Relacionado a Bootstrap*/
+    .card-text {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    /* Relacionado a Productos */
+    .categorias-catalogo a img {
+        height: 75px;
+    }
+    .direccion-footer iframe {
+        width: 370px;
+        height: 200px;
+        justify-self: start;
+        margin: 0;
+    }
+}
+
 @media (max-width: 720px) {
+    /* Relacionado a Footer */
     .grid-footer {
         grid-template-columns: 1;
         grid-template-rows: auto auto auto auto;
@@ -586,69 +550,12 @@ footer div ul li a {
     }
 }
 
-@media (max-width: 415px) {
-    .direccion-footer iframe {
-        width: 200px;
-        height: 100px;
-        justify-self: start;
-        margin: 0;
-    }
-}
-
-
-
-
-
-
-/** Meddia Queries Index */
-
-
-@media (max-width: 1250px) {
-    .flex-ofertas div a img {
-        height: 300px;
-        width: 300px;
-    }
-    .flex-recien-llegados div a img {
-        height: 300px;
-        width: 300px;
-    }
-}
-
-
-@media (max-width: 1010px) {
-    .flex-ofertas div a img {
-        height: 200px;
-        width: 200px;
-    }
-    .flex-recien-llegados div a img {
-        height: 200px;
-        width: 200px;
-    }
-}
-
-@media (max-width: 900px) {
-    .hero a {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-    .setup {
-        padding: 15px 0 15px 70px;
-        height: 300px;
-        width: 80%;}
-}
 
 @media (max-width: 690px) {
+    /* Relacionado a Index */
     .hero h2 {
-        margin: 50px 15px 0 0;
+        margin: 30px 15px 0 0;
     }
-    .setup {
-        display: none;
-    }
-    .background-section h2 {
-        padding-top: 0;
-    }
-
     .h1-index {
         background-image: url(../img/compilado3.0.jpg);
         background-position: center;
@@ -660,28 +567,38 @@ footer div ul li a {
     }
 }
 
-@media (max-width: 610px) {
-    .oferta {
-        height: 200px;
-        width: 200px;
+@media (max-width: 620px) {
+    /* Relacionado a Bootstrap*/
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
     }
-    .recien-llegado {
+}
+
+@media (max-width: 545px) {
+    /* Relacionado a Bootstrap*/
+    .card-title{
+        display: none;
+    }
+}
+
+@media (max-width: 470px) {
+    /* Relacionado a Bootstrap*/
+    .carousel-item img {
         height: 200px;
-        width: 200px;
+        object-fit: cover;
+    }
+    /* Relacionado a Footer*/
+    .direccion-footer iframe {
+        width: 270px;
+        height: 120px;
+        justify-self: start;
+        margin: 0;
     }
 }
 
 @media (max-width: 450px) {
-    .flex-ofertas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .flex-recien-llegados {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Relacionado a Index */
     .h1-index {
         background-image: url(../img/compilado3.0.jpg);
         background-position: center;
@@ -691,85 +608,14 @@ footer div ul li a {
         justify-content: center;
         margin: 0 30px 20px 30px;
     }
-}
-
-
-
-
-
-
-
-/** Meddia Queries Productos */
-
-
-@media (max-width: 1250px) {
-    .flex-productos-seleccionados div a img {
-        height: 300px;
-        width: 300px;
-    }
-}
-
-@media (max-width: 1010px) {
-    .flex-productos-seleccionados div a img {
-        height: 200px;
-        width: 200px;
-    }
-}
-
-@media (max-width: 760px) {
-    .categorias-catalogo a img {
-        height: 75px;
-    }
-}
-
-@media (max-width: 450px) {
-    .flex-productos-seleccionados {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Relacionado a Productos*/
     .categorias-catalogo a img {
         height: 50px;
     }
 }
 
-
-
-
-
-
-/** Media Queries de Bootstrap */
-
-@media (max-width: 620px) {
-    .carousel-item img {
-        height: 300px;
-        object-fit: cover;
-    }
-}
-
-@media (max-width: 470px) {
-    .carousel-item img {
-        height: 200px;
-        object-fit: cover;
-    }
-}
-
-
-/* Bootstrap Productos */
-
-@media (max-width: 810px) {
-    .card-text {
-        display: none;
-    }
-}
-
-@media (max-width: 545px) {
-    .card-title{
-        display: none;
-    }
-}
-
 @media (max-width: 400px) {
+    /* Relacionado a Bootstrap*/
     .card-link-ver-mas{
         display: none;
     }

@@ -1,0 +1,25 @@
+/*!-------NAV-------*/
+
+header {
+    margin: 0 0 20px 0;
+    .container-fluid {
+        padding: 20px 0 20px 0;
+            .navbar-brand img {
+                height: 75px;
+            }
+    }
+    .nav-item a{
+        &:hover {
+            color:#dc3545;
+        }
+    }
+    .navbar-brand {
+        img {
+            transition-duration: 0.5s;
+            &:hover {
+                scale: 1.1;
+                transition-timing-function: ease;
+            }
+        }
+    }
+}

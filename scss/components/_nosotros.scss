@@ -1,0 +1,23 @@
+/*! -------- NOSOTROS -------- */
+
+.padding-nosotros {
+    margin: 0 40px 0 0;
+    p {
+        padding: 0 0 0 40px;
+        color: #434a50;
+    }
+    h3 {
+        color: $primary-color;
+        margin: 60px 0 20px 0;
+    }
+    ul li {
+        padding: 0 0 0 40px;
+        color: #434a50;
+        text-decoration: none;
+        list-style: none;
+        font-weight: 600;
+        span {
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+/*!-------FOOTER-------*/
+
+footer {
+    background-color: #295264;
+    background: linear-gradient(0deg, rgba(74,29,29,1) 0%, rgba(130,52,52,1) 23%, rgba(186,77,77,1) 67%);
+    padding: 30px 0 0 0;
+    div ul li a {
+        text-decoration: none;
+        color: #011627;
+    }
+}
+
+
+/** --- GRID --- */
+.footer__grid {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "contactanos logo direccion"
+            "terminos logo redes"
+        ;
+        width: 100%;
+}
+
+.footer__grid__contacto {
+    display: inline-block;
+    padding: 0 0 0 30px;
+    grid-area: contactanos;
+    p {
+        padding: 0 0 0 30px;
+        display: inline-block;
+        &:nth-of-type(1) {
+            padding: 0 0 0 0px;
+            background-color: #c2c2c2c9;
+            color: $primary-color;
+            background-color: #c2c2c2c9;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 0 0 0 20px;
+        }
+    }
+}
+
+.footer__grid__direccion {
+    padding: 0 30px 0 0;
+    grid-area: direccion;
+    justify-self: end;
+    iframe {
+        width: 400px;
+        height: 200px;
+        margin: 0 10px 20px 30px;
+        border-radius: 10px;
+    }
+    p {
+        color:black;
+    }
+}
+
+.footer__grid__rooking-logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    img {
+        height: 300px;
+        transition-duration: 0.5s;
+        &:hover {
+            scale: 1.1;
+            transition-timing-function: ease;
+        }
+    }
+}
+
+.footer__grid__terminos {
+    grid-area: terminos;
+    padding: 0 0 0 30px;
+    p {
+        &:nth-of-type(1) {
+            padding: 0 0 0 0px;
+            background-color: #c2c2c2c9;
+            color: $primary-color;
+            background-color: #c2c2c2c9;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 0 0 0 20px;
+        }
+    }
+    ul li {
+        display: inline-block;
+        a {
+            transition-duration: 0.25s;
+            &:hover {
+                color: #e95c65;
+            }
+        }
+    }
+}
+
+.footer__grid__redes {
+    grid-area: redes;
+    justify-self: end;
+    margin: 0 10px 0 0;
+    span a {
+        text-decoration: none;
+        display: inline-block;
+        color: $primary-color;
+        background-color:#c2c2c2c9;
+        padding: 3px;
+        border-radius: 10px;
+        transition-duration: 0.25s;
+        &:hover {
+            background-color:#e95c65;
+            color: #011627;
+        }
+    }
+    a img {
+        display: inline-block;
+        height: 30px;
+        padding: 0 30px;
+        margin: 0 0 10px;
+    }
+    .facebook-logo {
+        padding: 0 0 0 42px;
+    }
+}
+
+/** ------ */
+
+

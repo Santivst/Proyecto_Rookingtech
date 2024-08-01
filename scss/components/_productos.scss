@@ -1,0 +1,31 @@
+/*! -------- PRODUCTOS ------- */
+
+.productos__section--enlaces-relativos {
+    @include flex (flex, row, space-around, auto);
+    flex-wrap: wrap;
+    border-color: #434a50;
+    border-style: solid;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 40px 0 40px;
+    padding: 10px 0 10px 0;
+    a {
+        text-decoration: none;
+        color: #3E7CB1;
+        img {
+            height: 100px;
+            transition-duration: 0.5s;
+            &:hover {
+                transform: scale(1.1);
+                transition-timing-function: ease;
+            }
+        }
+    }
+}
+
+.carrusel-productos {
+    div {
+        margin: 20px 0 0 0;
+    }
+}
+
