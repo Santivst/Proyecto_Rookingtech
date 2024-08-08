@@ -16,7 +16,7 @@ body {
 
 
 
-$primary-color: #89373d;
+$primary-color: #8d1224ee;
 
 @mixin flex ($flex, $direction, $justify, $align) {
     display: $flex;
@@ -33,6 +33,7 @@ $primary-color: #89373d;
 
 
 /** Bootstrap */
+
 
 .carousel-item {
     img {

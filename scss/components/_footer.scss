@@ -104,6 +104,14 @@ footer {
     grid-area: redes;
     justify-self: end;
     margin: 0 10px 0 0;
+    a {
+        img {
+            transition-duration: 0.25s;
+            &:hover {
+                transform:translateY(-2.5px) ;
+        }
+        }
+    }
     span a {
         text-decoration: none;
         display: inline-block;
@@ -113,6 +121,7 @@ footer {
         border-radius: 10px;
         transition-duration: 0.25s;
         &:hover {
+            scale: 1.05;
             background-color:#e95c65;
             color: #011627;
         }

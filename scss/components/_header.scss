@@ -5,6 +5,15 @@
 
 header {
     margin: 0 0 20px 0;
+    nav {
+        div {
+            div {
+                ul {
+                    margin: 0 0 0 30px;
+                }
+            }
+        }
+    }
     .container-fluid {
         padding: 20px 0 20px 0;
             .navbar-brand img {
@@ -12,8 +21,9 @@ header {
             }
     }
     .nav-item a{
+        color: rgb(255, 206, 206);
         &:hover {
-            color:#dc3545;
+            color:#ff7582;
         }
     }
     .navbar-brand {
@@ -25,4 +35,11 @@ header {
             }
         }
     }
+}
+
+
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: $primary-color !important;
 }
