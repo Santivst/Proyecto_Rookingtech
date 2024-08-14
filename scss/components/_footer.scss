@@ -17,22 +17,18 @@ footer {
 /** --- GRID --- */
 .footer__grid {
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-            "contactanos logo direccion"
-            "terminos logo redes"
-        ;
-        width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "contactanos logo direccion"
+        "terminos logo redes"
+    ;
+    width: 100%;
 }
 
 .footer__grid__contacto {
-    display: inline-block;
     padding: 0 0 0 30px;
-    grid-area: contactanos;
     p {
-        padding: 0 0 0 30px;
-        display: inline-block;
         &:nth-of-type(1) {
             padding: 0 0 0 0px;
             background-color: #c2c2c2c9;
@@ -41,6 +37,25 @@ footer {
             display: inline-block;
             border-radius: 5px;
             margin: 0 0 0 20px;
+        }
+    }
+    ul {
+        li {
+            display: inline-block;
+            a {
+                color: #011627;
+                transition-duration: 0.25s;
+                &:hover {
+                    color: #e95c65;
+                }
+            }
+            span {
+                color: #011627;
+                transition-duration: 0.25s;
+                &:hover {
+                    color: #e95c65;
+                }
+            }
         }
     }
 }
@@ -61,6 +76,7 @@ footer {
 }
 
 .footer__grid__rooking-logo {
+    padding: 40px 0 0 0;
     grid-area: logo;
     display: flex;
     justify-content: center;
@@ -89,12 +105,14 @@ footer {
             margin: 0 0 0 20px;
         }
     }
-    ul li {
-        display: inline-block;
-        a {
-            transition-duration: 0.25s;
-            &:hover {
-                color: #e95c65;
+    ul {
+        li {
+            display: inline-block;
+            a {
+                transition-duration: 0.25s;
+                &:hover {
+                    color: #e95c65;
+                }
             }
         }
     }

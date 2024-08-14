@@ -23,7 +23,8 @@
     /* Relacionado a Footer */
     .footer__grid__rooking-logo {
         img {
-            height: 200px;
+            padding: 50px 0 0 0;
+            height: 250px;
         }
     }
     /* Relacionado a Contactos */
@@ -202,6 +203,10 @@
             object-fit: cover;
         }
     }
+    /* Relacionado a Index */
+    .index__h1 {
+        padding: 50px 0 50px 0;
+    }
     /* Relacionado a Contactos */
     .contactos__section-2 {
         div {
@@ -283,6 +288,10 @@
             object-fit: cover;
         }
     }
+        /* Relacionado a Index */
+        .index__h1 {
+            padding: 30px 0 30px 0;
+        }
     /* Relacionado a Footer*/
     .footer__grid__direccion {
         iframe {

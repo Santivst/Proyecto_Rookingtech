@@ -15,7 +15,6 @@ body {
 
 
 
-
 $primary-color: #8d1224ee;
 
 @mixin flex ($flex, $direction, $justify, $align) {
@@ -29,12 +28,12 @@ $primary-color: #8d1224ee;
 
 
 
-/*! CLASES REPETIDAS */
 
+/*!  Clases repetidas  */
 
 /** Bootstrap */
 
-
+/*  Relacionado a carruseles  */
 .carousel-item {
     img {
         height: 500px;
@@ -49,6 +48,8 @@ $primary-color: #8d1224ee;
     color: #e7e7e7be;
 }
 
+
+/*  Relacionado a las tarjetas  */
 .card {
     box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
     -webkit-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
@@ -86,4 +87,5 @@ $primary-color: #8d1224ee;
 .card-body-extra {
     background-color: rgba(233, 233, 233, 0.697);
 }
+
 

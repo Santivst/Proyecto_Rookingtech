@@ -1,6 +1,3 @@
-
-
-
 /*!-------NAV-------*/
 
 header {
@@ -37,7 +34,19 @@ header {
     }
 }
 
-
+.dropdown-menu {
+    background-color: #710e1cee;
+    li {
+        color: black;
+        a {
+            transition-duration: 0.25s;
+            &:hover {
+                color: black;
+                background-color: #de455cee;
+            } 
+        }
+    }
+}
 
 .bg-body-tertiary {
     --bs-bg-opacity: 1;

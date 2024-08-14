@@ -25,21 +25,84 @@
 
 .paddingh3 {
     padding: 0px 0 0 20px;
-    color: #295264;
     div {
         padding: 0 0 0 40px;
-        color: #434a50;
+        color: black;
     }
     p {
         strong {
             color:black;
         }
     }
+    h3 {
+        color: black;
+    }
 }
 
-.servicios__section-margin {
-    margin: 0 40px 0 0;
-}
+.servicios__section-1 {
+    @include flex (flex, column, center, center);
+    text-align: center;
+    gap: 5px;
+    margin: 0 30px 20px 30px;
+    padding: 30px;
+    border-radius: 15px;
+    background-image: url(../img/servicios__background-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    h2 {
+        width: 80%;
+        padding: 15px;
+        margin: 0 0 30px 0;
+        background-color: $primary-color;
+        color: black;
+        border-radius: 20px;
+    }
+    div {
+        @include flex (flex, row, space-around, auto);
+        margin: 10px 5px 5px 20px;
+        padding: 0;
+        gap: 5px;
+        border-radius: 10px;
+        div {
+            @include flex (flex, column, auto, center);
+            background-color: $primary-color;
+            box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            -webkit-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            -moz-box-shadow: 9px 10px 14px -9px rgba(0,0,0,0.88);
+            transition-duration: 0.5s;
+            &:hover{
+                transform: scale(1.05);
+                transition-timing-function: ease;
+                box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+                -webkit-box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+                -moz-box-shadow: 9px 10px 29px -3px rgba(0,0,0,0.66);
+            }
+            h4 {
+                padding: 15px 0 10px 0;
+                width: 100%;
+            }
+            ul {
+                padding: 10px;
+                margin: 0 10px 15px 10px;
+                background-color: #e65165ee;
+                border-radius: 10px;
+                li {
+                    list-style: none;
+                    padding: 0 5px 0 5px;
+                    margin: 0 0 30px 0;
+                    font-weight: 500;
+                }
+            }
+            }
+        }
+    p {
+        margin: 20px 10px 0 10px;
+        color: #a84b4b;
+        font-weight: 500;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.762);
+    }
+    }
+
 
 h2 {
     padding: 50px 0 0 30px;
@@ -47,27 +110,166 @@ h2 {
     margin: 15px;
 }
 
-.nosotros__section-accordion {
-    margin: 30px;
-    @include flex (flex, column, center, auto);
+.servicios__section-2 {
+    margin: 0 30px 20px 30px;
+    @include flex (flex, column, center, center);
     text-align: center;
-    padding: 20px;
-    h2 {
-        background-color: $primary-color;
-        color: black;
-        padding: 0;
-        margin: 0 0 20px 0;
-        padding: 10px;
-        border-radius: 5px;
-        transition-duration: 0.25s;
-        &:hover {
-            color: whitesmoke;
-            background-color: #89373cee;
+    border-radius: 15px;
+    background-image: url(../img/servicios__montevideo.jpg);
+    background-size: cover;
+    background-position: center;
+    div {
+        &:nth-child(3) {
+            margin: 0 0 20px 0;
+            p {
+                background-color: #949494b1;
+                border-radius: 15px;
+                margin: 20px 10px 0 10px;
+                padding: 15px 20px 15px 20px;
+                color: rgb(114, 45, 45);
+                font-weight: 500;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.614);
+            }
         }
     }
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #89373cda ;
-    color: black;
+
+
+/** --- GRID --- */
+.servicios__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+        "envios-montevideo servicios__imagen-1"
+        "envios-montevideo servicios__imagen-1"
+        "servicios__imagen-2 envios-interior"
+        "servicios__imagen-2 envios-interior"
+        "recogida servicios__imagen-3"
+        "recogida servicios__imagen-3"
+        "servicios__imagen-4 garantia"
+        "servicios__imagen-4 garantia";
+    gap: 20px;
+    width: 100%;
+    div {
+        @include flex (flex, column, center, center);
+        background-color: #bfbfbfd2;
+        padding: 30px 15px 30px 15px;
+        margin: 0 50px 0 0;
+        img {
+            border-radius: 20px;
+            width: 400px;
+            transition-duration: 0.25s;
+            &:hover {
+                transform:translateY(-4.5px) ;
+            }
+        }
+        p {
+            strong {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+/* Componentes de la grilla */
+
+@for $i from 1 through 4 {
+    .servicios__grid__imagen-#{$i} {
+        grid-area: servicios__imagen-#{$i};
+    }
+}
+
+.servicios__grid__envios-montevideo {
+    grid-area: envios-montevideo;
+    
+}
+
+.servicios__grid__envios-interior {
+    grid-area: envios-interior;
+}
+
+.servicios__grid__recogida {
+    grid-area: recogida;
+}
+
+.servicios__grid__garantia {
+    grid-area: garantia;
+}
+
+/** -------- */
+
+
+
+.servicios__section-3 {
+    @include flex (flex, column, center, center);
+    text-align: center;
+    background-color:#a0272776;
+    margin: 0 30px 20px 30px;
+    padding: 0 30px 20px 30px;
+    border-radius: 20px;
+    h2 {
+        padding: 20px 0 30px 0;
+    }
+}
+
+.servicios__adicionales__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "grid__adicionales-1 grid__adicionales-2 grid__adicionales-3"
+    "grid__adicionales-4 grid__adicionales-5 grid__adicionales-6";
+    gap: 20px;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    background-color: #a84b4b;
+    border-radius: 15px;
+}
+
+
+
+@for $i from 1 through 6 {
+    .servicios__grid__adicionales-#{$i} {
+        grid-area: grid__adicionales-#{$i};
+    }
+}
+
+.servicios__section-4 {
+    @include flex (flex, column, center, center);
+    text-align: center;
+    background-color: #d1253cee;
+    border-radius: 15px;
+    margin: 0 30px 20px 20px;
+    h2 {
+        padding: 30px 0 0 0;
+        margin: 0;
+    }
+    div {
+        margin: 20px 10px 30px 10px;
+        padding: 0 40px 0 20px;
+        background-color: #e3e2e291;
+        border-radius: 20px;
+        h3 {
+            padding: 30px 0 0 0;
+        }
+        ul {
+            list-style: none;
+            li {
+                padding: 20px 0 0 0;
+            }
+        }
+        p {
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                transition-duration: 0.25s;
+                &:hover {
+                    color: #ed4949;
+                }
+            }
+        }
+    }
 }
