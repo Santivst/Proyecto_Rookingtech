@@ -6,7 +6,7 @@
 .index__h1 {
     background-image: url(../img/compilado3.0.jpg);
     background-position: center;
-    border-radius: 15px;
+    @extend %border-radius;
     padding: 80px 0 80px 0;
     @include flex (flex, row, center, auto);
     margin: 0 30px 20px 30px;

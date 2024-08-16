@@ -27,16 +27,23 @@ footer {
 }
 
 .footer__grid__contacto {
+    @include flex (flex, column, center, center);
     padding: 0 0 0 30px;
+    width: 70%;
     p {
         &:nth-of-type(1) {
-            padding: 0 0 0 0px;
-            background-color: #c2c2c2c9;
+            text-align: center;
             color: $primary-color;
-            background-color: #c2c2c2c9;
             display: inline-block;
-            border-radius: 5px;
-            margin: 0 0 0 20px;
+            background-color: #e79e9edf;
+            border-radius: 30px;
+            padding: 5px 15px 5px 15px;
+            transition-duration: 0.3s;
+            &:hover {
+                scale: 1.01;
+                background-color:#e95c65;
+                color: #011627;
+            }
         }
     }
     ul {
@@ -68,7 +75,7 @@ footer {
         width: 400px;
         height: 200px;
         margin: 0 10px 20px 30px;
-        border-radius: 10px;
+        @extend %border-radius;
     }
     p {
         color:black;
@@ -93,19 +100,26 @@ footer {
 
 .footer__grid__terminos {
     grid-area: terminos;
+    @include flex (flex, column, center, center);
     padding: 0 0 0 30px;
+    width: 60%;
     p {
         &:nth-of-type(1) {
-            padding: 0 0 0 0px;
-            background-color: #c2c2c2c9;
+            padding: 5px 15px 5px 15px;
             color: $primary-color;
-            background-color: #c2c2c2c9;
             display: inline-block;
-            border-radius: 5px;
-            margin: 0 0 0 20px;
+            background-color: #e79e9edf;
+            border-radius: 30px;
+            transition-duration: 0.3s;
+            &:hover {
+                scale: 1.01;
+                background-color:#e95c65;
+                color: #011627;
+            }
         }
     }
     ul {
+        margin: 10px 0 0 0;
         li {
             display: inline-block;
             a {
@@ -121,7 +135,7 @@ footer {
 .footer__grid__redes {
     grid-area: redes;
     justify-self: end;
-    margin: 0 10px 0 0;
+    margin: 40px 10px 0 0;
     a {
         img {
             transition-duration: 0.25s;
@@ -133,10 +147,10 @@ footer {
     span a {
         text-decoration: none;
         display: inline-block;
+        border-radius: 30px;
+        padding: 5px 15px 5px 15px;
         color: $primary-color;
-        background-color:#c2c2c2c9;
-        padding: 3px;
-        border-radius: 10px;
+        background-color: #e79e9edf;
         transition-duration: 0.25s;
         &:hover {
             scale: 1.05;

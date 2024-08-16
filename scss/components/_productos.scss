@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     border-color: #434a50;
     border-style: solid;
-    border-radius: 15px;
+    @extend %border-radius;
     text-align: center;
     margin: 20px 40px 0 40px;
     padding: 10px 0 10px 0;
